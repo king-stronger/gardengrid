@@ -155,8 +155,8 @@
 
     /************* Header Section *************/
     header {
-        background-color: var(--bg-container);
         box-shadow: var(--shadow-light);
+        background-color: var(--bg-container);
     }
     
     .nav-link:hover, .social-link:hover {
@@ -166,6 +166,7 @@
     @media (width < 600px){
         nav {
             color: var(--text-alt);
+            box-shadow: var(--shadow-medium);
             background-color: var(--bg-body-alt);
 
             i {
@@ -325,7 +326,7 @@
             row-gap: var(--gap-5);
             flex-direction: column;
 
-            translate: 0 -100%;
+            translate: 0 -110%;
             transition: translate 200ms ease-in;
         }
 
@@ -348,6 +349,7 @@
 
         video {
             width: 100%;
+            object-fit: cover;
             aspect-ratio: 16 / 9;
         }
     }
@@ -506,6 +508,11 @@
             display: flex;
             gap: var(--gap-0);
             flex-direction: column;
+
+            img {
+                object-fit: cover;
+                aspect-ratio: 16 / 9;
+            }
             
             .blog-content {
                 height: 100%;  
@@ -667,6 +674,7 @@
 
     /*********************** BUTTONS**************************/
     .btn, .btn-sm, .btn-lg {
+        text-align: center;
         border-radius: .5rem;
         display: inline-block;
 

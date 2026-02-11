@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GardenGrid - Accueil</title>
+    <title>GardenGrid - Smart Community Garden Platform</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -19,12 +19,12 @@
                 <button id="close-menu">
                     <i class="ri-close-large-line"></i>
                 </button>
-                <a href="index.html" class="nav-link">Accueil</a>
-                <a href="about.html" class="nav-link">A propos</a>
-                <a href="product.html" class="nav-link">Produit & Solutions</a>
-                <a href="product.html#pricing-section" class="nav-link">Tarifs</a>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="product.html" class="nav-link">Product & Solutions</a>
+                <a href="product.html#pricing-section" class="nav-link">Pricing</a>
                 <a href="blog.html" class="nav-link">Blog</a>
-                <a href="#" class="btn btn-primary">Commencer gratuitement</a>
+                <a href="#" class="btn btn-primary">Start for Free</a>
             </nav>
             <button id="open-menu">
                 <i class="ri-menu-line"></i>
@@ -34,43 +34,50 @@
 
     <section class="hero-section">
         <div class="wrapper flow-md">
-            <h2 class="text-xl text-center text-bold">Cultivez l'intelligence au cœur de votre communauté</h2>
+            <h2 class="text-xl text-center text-bold">
+                Start and Manage a Community Garden — The Easy Way
+            </h2>
             <p class="text text-center">
-                La plateforme tout-en-un qui combine IA et IoT pour transformer chaque espace en un jardin communautaire florissant. Gérez, optimisez et partagez vos récoltes en un clic
+                GardenGrid helps schools, neighborhoods, and teams plan their garden, track plant health, and grow together — with smart tools that make gardening simpler, more productive, and more fun.
             </p>
             <div>
-                <a href="#" class="btn btn-primary">Créer un compte</a>
-                <a href="#" class="btn btn-secondary-alt">Voir la démo vidéo</a>
+                <a href="#" class="btn btn-primary">Create My Free Account</a>
+                <a href="#" class="btn btn-secondary-alt">Watch 2-Min Demo</a>
             </div>
+            <p class="text-sm text-center">
+                No credit card required • Set up in minutes
+            </p>
+
             <video 
                 playsinline 
                 controls
                 preload="metadata" 
-                poster="assets/img/background_00.avif"
+                poster="assets/img/garden.avif"
                 class="hero-video"
             >
-                <source src="hero-video.webm" type="video/webm">
-                <source src="hero-video.mp4" type="video/mp4">
-                Votre navigateur ne supporte pas la vidéo.
+                <source src="" type="video/webm">
+                Your browser does not support the video tag.
             </video>
         </div>
     </section>
 
     <section class="proof-section">
         <div class="wrapper flow-xl">
-            <h2 class="text-lg text-bold text-center">Ils font confiance à GardenGrid <br> pour reverdir leurs espaces</h2>
+            <h2 class="text-lg text-bold text-center">
+                Trusted by Schools, Communities & Organizations
+            </h2>
             <ul class="stat-list">
                 <li>
                     <span class="text-xl text-bold">80+</span>
-                    <span class="text">Jardins créés</span>
+                    <span class="text">Gardens Created</span>
                 </li>
                 <li>
                     <span class="text-xl text-bold">260+</span>
-                    <span class="text">Jardiniers actifs</span>
+                    <span class="text">Active Gardeners</span>
                 </li>
                 <li>
                     <span class="text-xl text-bold">40+</span>
-                    <span class="text">Communautés engagées</span>
+                    <span class="text">Engaged Communities</span>
                 </li>
             </ul>
         </div>
@@ -79,24 +86,30 @@
     <section class="problem-section">
         <div class="wrapper">
             <div class="problem-content flow-md">
-                <h2 class="text-lg text-bold">Le jardinage communautaire, enfin simplifié</h2>
+                <h2 class="text-lg text-bold">Community Gardening, Without the Chaos</h2>
                 <ul class="problem-content-list">
                     <li>
-                        <h3 class="text">Marre des récoltes perdues ?</h3>
-                        <span class="text-sm">Notre IA prédit les besoins de vos plantes avant même qu'elles ne flétrissent</span>
+                        <h3 class="text">Losing harvests?</h3>
+                        <span class="text-sm">
+                            Our predictive AI detects plant stress early and recommends the right actions before damage happens.
+                        </span>
                     </li>
                     <li>
-                        <h3 class="text">Difficile de coordonner tout le monde ?</h3>
-                        <span class="text-sm">Centralisez les tâches et communiquez avec tous les membres sur une interface unique</span>
+                        <h3 class="text">Coordination is messy?</h3>
+                        <span class="text-sm">
+                            Assign tasks, centralize communication, and manage everything from a single dashboard.
+                        </span>
                     </li>
                     <li>
-                        <h3 class="text">Oubliez l'arrosage manuel</h3>
-                        <span class="text-sm">Nos capteurs IoT s'occupent de surveiller l'humidité pour vous, 24h/24</span>
+                        <h3 class="text">Overwatering or underwatering?</h3>
+                        <span class="text-sm">
+                            Smart IoT sensors monitor soil moisture 24/7 and send real-time alerts.
+                        </span>
                     </li>
                 </ul>
             </div>
             <div class="img-wrapper">
-                <img src="assets/img/temp.avif" alt="">
+                <img src="assets/img/problem.avif" alt="Smart garden monitoring dashboard">
             </div>
         </div>
     </section>
@@ -104,22 +117,28 @@
     <section class="how-section">
         <div class="wrapper">
             <div class="img-wrapper">
-                <img src="assets/img/temp.avif" alt="">
+                <img src="assets/img/solution.avif" alt="GardenGrid setup process">
             </div>
             <div class="how-content flow-md">
-                <h2 class="text-lg text-bold">Trois étapes pour transformer votre main verte</h2>
+                <h2 class="text-lg text-bold">Start Growing Smarter in 3 Simple Steps</h2>
                 <ul class="how-content-list">
                     <li>
-                        <h3 class="text">Configurez votre Grille</h3>
-                        <span class="text-sm">Dessinez virtuellement votre jardin sur notre plateforme web intuitive</span>
+                        <h3 class="text">1. Design Your Garden Grid</h3>
+                        <span class="text-sm">
+                            Map and organize your garden virtually using our intuitive web platform.
+                        </span>
                     </li>
                     <li>
-                        <h3 class="text">Connectez vos capteurs</h3>
-                        <span class="text-sm">Installez nos outils IoT (Smart/Pro) pour un suivi en temps réel de la santé du sol</span>
+                        <h3 class="text">2. Connect Smart Sensors</h3>
+                        <span class="text-sm">
+                            Install IoT devices to track soil health, humidity, and plant conditions in real time.
+                        </span>
                     </li>
                     <li>
-                        <h3 class="text">Récoltez ensemble</h3>
-                        <span class="text-sm">Recevez des alertes personnalisées et partagez vos succès avec votre communauté</span>
+                        <h3 class="text">3. Optimize & Grow Together</h3>
+                        <span class="text-sm">
+                            Receive AI-driven insights and collaborate with your community to maximize results.
+                        </span>
                     </li>
                 </ul>
             </div>
@@ -130,16 +149,22 @@
         <div class="wrapper">
             <ul class="feature-list">
                 <li>
-                    <h3 class="text text-bold">IA Prédictive</h3>
-                    <p class="text-sm">Optimisation automatique de l'arrosage et diagnostic des maladies par photo</p>
+                    <h3 class="text text-bold">Predictive AI Engine</h3>
+                    <p class="text-sm">
+                        Automated watering optimization and photo-based plant disease detection.
+                    </p>
                 </li>
                 <li>
-                    <h3 class="text text-bold">Tableau de bord IA</h3>
-                    <p class="text-sm">Visualisez la croissance, la météo locale et les statistiques de production</p>
+                    <h3 class="text text-bold">Advanced Analytics Dashboard</h3>
+                    <p class="text-sm">
+                        Track growth metrics, weather data, harvest performance, and sustainability impact.
+                    </p>
                 </li>
                 <li>
-                    <h3 class="text text-bold">Mode Communauté</h3>
-                    <p class="text-sm">Un réseau social privé pour échanger conseils, graines et outils entre voisins ou collègues</p>
+                    <h3 class="text text-bold">Private Community Network</h3>
+                    <p class="text-sm">
+                        Share updates, coordinate tasks, and exchange resources with neighbors, schools, or colleagues.
+                    </p>
                 </li>
             </ul>
         </div>
@@ -147,54 +172,62 @@
 
     <section class="cta-section">
         <div class="wrapper">
-            <h2 class="text-lg text-bold text-center">Prêt à faire pousser votre premier projet ?</h2>
-            <p class="text text-center">Rejoignez le mouvement de l'agriculture urbaine intelligente dès aujourd'hui</p>
-            <a href="#" class="btn btn-primary">Créer mon compte (C'est gratuit)</a>
+            <h2 class="text-lg text-bold text-center">
+                Ready to Launch Your Smart Garden Project?
+            </h2>
+            <p class="text text-center">
+                Join the growing movement of data-driven urban agriculture.
+            </p>
+            <a href="#" class="btn btn-primary">
+                Start My Free Garden Today
+            </a>
+            <p class="text-sm text-center">
+                Free plan available • Upgrade anytime
+            </p>
         </div>
     </section>
 
     <footer>
         <div class="wrapper">
             <div class="flow-sm">
-                <h3 class="text-xd">GardenGrid</h3>
+                <h3 class="text-xd text-bold">GardenGrid</h3>
                 <p class="text-sm footer-paragraph">
-                    La plateforme de référence pour la gestion des jardins communautaires. Connectons les jardiniers, optimisons les récoltes avec l'IA et l'IoT.
+                    The leading platform for community garden management. Connect gardeners, optimize harvests with AI and IoT, and grow smarter together.
                 </p>
             </div>
             <div class="flow-sm">
-                <h3 class="text-xd">Produit</h3>
+                <h3 class="text-xd text-bold">Product</h3>
                 <div class="text-sm footer-paragraph">
-                    <a href="#">Fonctionnalités</a>
-                    <a href="#">Solutions Entreprises</a>
-                    <a href="#">Tarifs</a>
-                    <a href="#">Application Mobile</a>
+                    <a href="#">Features</a>
+                    <a href="#">Business Solutions</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Mobile App</a>
                 </div>
             </div>
             <div class="flow-sm">
-                <h3 class="text-xd">Ressources</h3>
+                <h3 class="text-xd text-bold">Resources</h3>
                 <div class="text-sm footer-paragraph">
-                    <a href="#">Support technique</a>
+                    <a href="#">Technical Support</a>
                     <a href="#">FAQ</a>
                     <a href="#">Documentation</a>
                     <a href="#">Blog</a>
                 </div>
             </div>
             <div class="flow-sm">
-                <h3 class="text-xd">Newsletter</h3>
+                <h3 class="text-xd text-bold">Newsletter</h3>
                 <form action="" class="flow-xs">
-                    <p class="text-sm">Recevez nos conseils pour un jardin intelligent</p>
+                    <p class="text-sm">Get smart gardening tips and updates straight to your inbox</p>
                     <div class="form-footer">
-                        <input type="email" name="email" placeholder="@email.com">
+                        <input type="email" name="email" placeholder="your@email.com">
                         <button type="submit" class="btn btn-primary">
                             <i class="ri-send-plane-2-line"></i>
                         </button>
                     </div>
                 </form>
-                <ul class="social-links">
-                    <li class="text"><a href="" class="social-link ri-github-fill"></a></li>
-                    <li class="text"><a href="" class="social-link ri-linkedin-box-fill"></a></li>
-                    <li class="text"><a href="" class="social-link ri-whatsapp-fill"></a></li>
-                    <li class="text"><a href="" class="social-link ri-mail-fill"></a></li>
+                <ul class="social-links text-md">
+                    <li><a href="" class="social-link ri-linkedin-box-fill"></a></li>
+                    <li><a href="" class="social-link ri-whatsapp-fill"></a></li>
+                    <li><a href="" class="social-link ri-mail-fill"></a></li>
                 </ul>
             </div>
         </div>
