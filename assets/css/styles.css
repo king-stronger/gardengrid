@@ -46,7 +46,7 @@
 
     --clr-black: hsl(0 5% 5%);
     --clr-white: hsl(0 5% 95%);
-    --clr-accent: hsl(60 100% 41%);
+    --clr-accent: hsl(180 100% 41%);
     --clr-primary: hsl(120 100% 41%);
 
     --clr-border: hsl(120 15% 20%);
@@ -692,12 +692,12 @@
     }
 
     .btn-primary {
-        color: var(--white);
+        color: var(--clr-black);
         background-color: var(--clr-primary);
         transition: background-color 0.3s, color 0.3s;
 
         * {
-            color: var(--clr-white);
+            color: var(--clr-black);
         }
     }    
 
@@ -721,10 +721,11 @@
 
     .btn-primary:hover, .btn-secondary:hover, .btn-secondary-alt:hover {
         outline: none;
+        color: var(--clr-black);
         background-color: var(--clr-accent);
 
         * {
-            color: var(--clr-white);
+            color: var(--clr-black);
         }
     }
 
