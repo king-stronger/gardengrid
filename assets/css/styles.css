@@ -35,22 +35,22 @@
     --gap-10: clamp(13.5rem, 11.3523rem + 9.5455vw, 18.75rem);
 
     /****************** Colors ************/
-    --bg-body: hsl(120 10% 97%);
-    --bg-body-alt: hsl(120 10% 15%);
-    --bg-container: hsl(120 10% 100%);
+    --bg-body: hsl(150 10% 97%);
+    --bg-body-alt: hsl(150 10% 15%);
+    --bg-container: hsl(150 10% 100%);
 
-    --text: hsl(120 15% 5%);
-    --text-alt: hsl(120 15% 95%);
-    --text-muted : hsl(120 15% 30%);
-    --text-muted-alt : hsl(120 15% 70%);
+    --text: hsl(150 15% 5%);
+    --text-alt: hsl(150 15% 95%);
+    --text-muted : hsl(150 15% 30%);
+    --text-muted-alt : hsl(150 15% 70%);
 
     --clr-black: hsl(0 5% 5%);
     --clr-white: hsl(0 5% 95%);
     --clr-accent: hsl(180 100% 41%);
-    --clr-primary: hsl(120 100% 41%);
+    --clr-primary: hsl(150 100% 41%);
 
-    --clr-border: hsl(120 15% 20%);
-    --clr-container: hsl(120 17% 88%);
+    --clr-border: hsl(150 15% 20%);
+    --clr-container: hsl(150 17% 88%);
 
     /****************** Shadows ************/
     --shadow-light:
@@ -464,7 +464,7 @@
     /************* Solution Section *************/
 
     /************* Pricing Section *************/
-    .pricing-section .wrapper {
+    .prices {
         display: grid;
         gap: var(--gap-4);
         grid-template-rows: auto 1fr;
