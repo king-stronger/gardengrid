@@ -291,7 +291,7 @@
     header .wrapper {
         display: flex;
         align-items: center;
-        padding: var(--padding-2) 0;
+        padding: var(--padding-1) 0;
         justify-content: space-between;
     }
 
