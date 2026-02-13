@@ -9,11 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
 </head>
 <body>
     <header>
         <div class="wrapper">
-            <h1 class="text text-bolder">GardenGrid</h1>
+            <img class="logo" src="assets/img/Logo.avif" alt="GardenGrid Logo">
 
             <nav id="menu">
                 <button id="close-menu">
@@ -26,38 +27,45 @@
                 <a href="blog.html" class="nav-link">Blog</a>
                 <a href="#" class="btn btn-primary">Start for Free</a>
             </nav>
-            <button id="open-menu">
-                <i class="ri-menu-line"></i>
-            </button>
+            <div class="header-btns">
+                <a href="#" class="btn btn-primary">Get the app</a>
+                <button id="open-menu">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
         </div>
     </header>
 
     <section class="hero-section">
         <div class="wrapper flow-md">
             <h2 class="text-xl text-center text-bold">
-                Run a Successful Community Garden — Without the Chaos
+                Transform small spaces into powerful sources of fresh food
             </h2>
-            <p class="text text-center">
-                GardenGrid helps schools, neighborhoods, and teams organize and grow healthier gardens — all in one simple platform
-            </p>
-            <div>
-                <a href="#" class="btn btn-primary">Start My Garden — Free</a>
-                <a href="#" class="btn btn-secondary-alt">See How It Works in 2 Minutes</a>
+            <div class="hero-section-btn">
+                <a href="#" class="btn btn-primary">Start My Free Garden</a>
             </div>
             <p class="text-sm text-center">
-                No credit card required • Setup takes less than 3 minutes
+                No credit card required • Setup in 2 minutes
             </p>
 
-            <video 
-                playsinline 
-                controls
-                preload="metadata" 
-                poster="assets/img/garden.avif"
-                class="hero-video"
-            >
-                <source src="" type="video/webm">
-                Your browser does not support the video tag.
-            </video>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="assets/img/K-GD-12.avif" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/K-GD-13.avif" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/K-GD-12.avif" alt="">
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
     </section>
 
@@ -69,15 +77,15 @@
             <ul class="stat-list">
                 <li>
                     <span class="text-xl text-bold">80+</span>
-                    <span class="text">Gardens Created</span>
+                    <span class="text">Urban & Community Gardens</span>
                 </li>
                 <li>
                     <span class="text-xl text-bold">260+</span>
-                    <span class="text">Active Gardeners</span>
+                    <span class="text">Active Gardeners & Coordinators</span>
                 </li>
                 <li>
                     <span class="text-xl text-bold">40+</span>
-                    <span class="text">Engaged Communities</span>
+                    <span class="text">Schools & Local Communities</span>
                 </li>
             </ul>
         </div>
@@ -86,30 +94,52 @@
     <section class="problem-section">
         <div class="wrapper">
             <div class="problem-content flow-md">
-                <h2 class="text-lg text-bold">Stop Losing Harvests Because of Poor Coordination</h2>
+
+                <h2 class="text-lg text-bold">
+                    Stop Losing Time, Harvests, and Motivation Because of Poor Coordination
+                </h2>
+
+                <p class="text-md">
+                    Growing plants is easy. Organizing people, data, and timing is the real challenge.
+                </p>
+
                 <ul class="problem-content-list">
+
                     <li>
-                        <h3 class="text text-bold">Plants dying without warning?</h3>
+                        <h3 class="text text-bold">
+                            Everyone Is Willing to Help — No One Knows What to Do
+                        </h3>
                         <span class="text-sm">
-                            Get early alerts and simple action steps before small issues become lost harvests
+                            Tasks are discussed, then forgotten. Responsibilities are unclear, and daily
+                            actions depend on memory instead of structure.
                         </span>
                     </li>
+
                     <li>
-                        <h3 class="text text-bold">Too many people, not enough coordination?</h3>
+                        <h3 class="text text-bold">
+                            Decisions Are Made Blind, or Too Late
+                        </h3>
                         <span class="text-sm">
-                            Assign tasks, track responsibilities, and keep everyone aligned in one shared space
+                            Without real data on soil, weather, and plant health, problems are detected
+                            only when harvests are already compromised.
                         </span>
                     </li>
+
                     <li>
-                        <h3 class="text text-bold">Never sure when or how much to water?</h3>
+                        <h3 class="text text-bold">
+                            Gardens Work Once — Then Collapse
+                        </h3>
                         <span class="text-sm">
-                            Monitor soil conditions in real time and avoid overwatering or underwatering
+                            Motivation fades without coordination and shared learning. Knowledge is lost,
+                            people disengage, and the project never scales.
                         </span>
                     </li>
+
                 </ul>
             </div>
+
             <div class="img-wrapper">
-                <img src="assets/img/vision.avif" alt="Smart garden monitoring dashboard">
+                <img src="assets/img/problem.avif" alt="Disorganized community garden without coordination tools">
             </div>
         </div>
     </section>
@@ -129,7 +159,7 @@
                         </p>
                     </li>
                     <li>
-                        <h3 class="text text-bold">2. Connect & Monitor</h3>
+                        <h3 class="text text-bold">2. Connect, Monitor & Learn</h3>
                         <p class="text-sm">
                             Track soil moisture, weather, and plant health in real time
                         </p>
@@ -149,21 +179,21 @@
         <div class="wrapper">
             <ul class="feature-list">
                 <li>
-                    <h3 class="text text-bold">Smarter Watering & Health Alerts</h3>
+                    <h3 class="text text-bold">Collective Garden Intelligence</h3>
                     <p class="text-sm">
-                        Know exactly when your plants need attention — before problems spread
+                        Every garden strengthens the global dataset and improves recommendations
                     </p>
                 </li>
                 <li>
-                    <h3 class="text text-bold">Clear Performance Insights</h3>
+                    <h3 class="text text-bold">Community & Marketplace Ready</h3>
                     <p class="text-sm">
-                        See what’s working, what’s not, and improve each season
+                        Coordinate harvests, share surplus, and fulfill local demand together
                     </p>
                 </li>
                 <li>
-                    <h3 class="text text-bold">Built for Teams & Communities</h3>
+                    <h3 class="text text-bold">Impact You Can Measure</h3>
                     <p class="text-sm">
-                        Keep everyone involved, informed, and motivated
+                        Track food production, waste recycled, and environmental contribution
                     </p>
                 </li>
             </ul>
@@ -237,5 +267,6 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/carousel.js" type="module"></script>
 </body>
 </html>
