@@ -344,6 +344,7 @@
     }
 
     .logo {
+        width: 120px;
         width: max(120px, 15%);
     }
 
