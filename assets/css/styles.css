@@ -273,8 +273,30 @@
     /************* Pricing Section *************/
 
 
-    /************* Blog Section *************/
-    /************* Blog Section *************/
+    /************* Video Section *************/
+    .gallery-section {
+        a {
+            color: blue;
+        }
+
+        img, video {
+            border-radius: 1rem;
+
+            @supports(corner-shape: squircle){
+                border-radius: 2rem;
+                corner-shape: squircle;
+            }
+        }
+    }
+    /************* Video Section *************/
+
+    /************* Ressources Section *************/
+    .ressources-section {
+        a {
+            color: blue;
+        }
+    }
+    /************* Ressources Section *************/
 
     /************* Footer Section *************/
     footer {
@@ -294,7 +316,7 @@
     }
 
     section + section {
-        margin-top: var(--gap-7);
+        margin-top: var(--gap-6);
     }
 
     .wrapper {
@@ -347,16 +369,17 @@
         }
 
         nav {
-            width: 100%;
-            inset: 0 0 auto 0;
+            width: 50%;
             position: absolute;
-            padding-block: var(--gap-6);
+            inset: 3.4rem 0 auto 0;
+            padding-block: var(--gap-5);
 
+            margin-left: auto;
             align-items: center;
-            row-gap: var(--gap-5);
+            row-gap: var(--gap-4);
             flex-direction: column;
 
-            translate: 0 -110%;
+            translate: 0 -150%;
             transition: translate 200ms ease-in;
         }
 
@@ -380,6 +403,12 @@
 
         .swiper {
             width: 100%;
+            height: 75dvh;
+            
+            img {
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 
@@ -387,7 +416,7 @@
         display: grid;
         gap: var(--gap-4);
         align-items: center;
-        padding-block: var(--gap-5) var(--gap-6);
+        padding-block: var(--gap-4) var(--gap-6);
         grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
     }
     /************* Hero Section *************/
@@ -424,6 +453,16 @@
         li {
             display: grid;
             gap: var(--gap-0);
+        }
+    }
+
+    @media (width < 600px){
+        .problem-section .img-wrapper {
+            order: 1;
+        }
+
+        .problem-content {
+            order: 2;
         }
     }
     /************* Problem Section *************/
@@ -521,55 +560,26 @@
     /************* Pricing Section *************/
 
 
-    /************* Blog Section *************/
-    .blog-form {
-        display: flex;
-        flex-wrap: wrap;
-        gap: var(--gap-4);
-    } 
-
-    .blog-list {
+    /************* Gallery Section *************/
+    .gallery-list {
         display: grid;
         gap: var(--gap-5);
         grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
-        
-        li {
-            display: flex;
-            gap: var(--gap-0);
-            flex-direction: column;
 
-            img {
-                object-fit: cover;
-                aspect-ratio: 16 / 9;
-            }
-            
-            .blog-content {
-                height: 100%;  
-                display: flex;
-                align-items: start;
-                row-gap: var(--gap-0);
-                flex-direction: column;
-                padding: var(--padding-0);  
-                justify-content: space-between;
-            }
-
-            p {
-                overflow: hidden;
-                display: -webkit-box;
-                line-clamp: 3;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
-            }
+        video {
+            aspect-ratio: 16/9;
         }
     }
+    /************* Gallery Section *************/
 
-    .blog-section {
-        :has(> a) {
-            display: flex;
-            justify-content: center;
-        }
+    /************* Ressources Section *************/
+    .ressources-list {
+        display: flex;
+        gap: var(--gap-2);
+        flex-direction: column;
+        justify-content: center;
     }
-    /************* Blog Section *************/
+    /************* Ressources Section *************/
 
     /************* Footer Section *************/
     footer {

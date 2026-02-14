@@ -1,11 +1,9 @@
 const menu = document.getElementById("menu");
+const menuIcon = document.getElementById("menu-icon");
 const openMenu = document.getElementById("open-menu");
-const closeMenu = document.getElementById("close-menu");
 
 openMenu.addEventListener("click", () => {
-    menu.classList.add("show")
-})
-
-closeMenu.addEventListener("click", () => {
-    menu.classList.remove("show")
+    menu.classList.toggle("show")
+    menuIcon.classList.toggle("ri-menu-line")
+    menuIcon.classList.toggle("ri-close-large-line")
 })
