@@ -36,13 +36,13 @@
 
     /****************** Colors ************/
     --bg-body: hsl(150 10% 97%);
-    --bg-body-alt: hsl(150 10% 15%);
+    --bg-body-alt: hsl(170 70% 90%);
     --bg-container: hsl(150 10% 100%);
 
     --text: hsl(150 15% 5%);
-    --text-alt: hsl(150 15% 95%);
+    --text-alt: hsl(170 15% 5%);
     --text-muted : hsl(150 15% 30%);
-    --text-muted-alt : hsl(150 15% 70%);
+    --text-muted-alt : hsl(170 15% 30%);
 
     --clr-black: hsl(0 5% 5%);
     --clr-white: hsl(0 5% 95%);
@@ -244,6 +244,7 @@
     /************* CTA Section *************/
     .cta-section .wrapper {
         color: var(--text-alt);
+        box-shadow: var(--shadow-light);
         background-color: var(--bg-body-alt);
 
         @supports(corner-shape: squircle){
@@ -311,10 +312,6 @@
 }
 
 @layer layout {
-    section:first-of-type:not(.hero-section, .hero-alt-section) {
-        margin-top: var(--gap-4);
-    }
-
     section + section {
         margin-top: var(--gap-6);
     }
@@ -351,7 +348,7 @@
     nav {
         display: flex;
         align-items: center;
-        column-gap: var(--gap-2);
+        column-gap: var(--gap-1);
     }
 
     .socials {
@@ -395,7 +392,7 @@
         isolation: isolate;
         place-items: center;
         place-content: center;
-        padding-block: var(--gap-4) var(--gap-6);
+        padding-block: var(--gap-4) var(--gap-4);
     
         .hero-section-btn {
             display: flex;
@@ -417,7 +414,7 @@
         display: grid;
         gap: var(--gap-4);
         align-items: center;
-        padding-block: var(--gap-4) var(--gap-6);
+        padding-block: var(--gap-4) var(--gap-4);
         grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
     }
     /************* Hero Section *************/
