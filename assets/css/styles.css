@@ -165,9 +165,15 @@
 
     @media (width < 600px){
         nav {
+            border-radius: 1rem;
             color: var(--text-alt);
-            box-shadow: var(--shadow-medium);
+            box-shadow: var(--shadow-light);
             background-color: var(--bg-body-alt);
+            
+            @supports(corner-shape: squircle){
+                border-radius: 2rem;
+                corner-shape: square square square squircle;
+            }
 
             i {
                 color: var(--text-alt);
@@ -377,7 +383,7 @@
             row-gap: var(--gap-4);
             flex-direction: column;
 
-            translate: 0 -150%;
+            translate: 150% 0;
             transition: translate 200ms ease-in;
         }
 
