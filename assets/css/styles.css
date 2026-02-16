@@ -216,7 +216,7 @@
     }
     /************* Hero Section *************/
     
-    /************* Proof Section *************/
+    /************* Stats Section *************/
     .stat-list li {
         border-radius: 1rem;
         box-shadow: var(--shadow-light);
@@ -227,7 +227,7 @@
             corner-shape: squircle;
         }
     }
-    /************* Proof Section *************/
+    /************* Stats Section *************/
 
     /************* Problem Section *************/
     /************* Problem Section *************/
@@ -328,9 +328,9 @@
 
     /************* Header Section *************/
     header {
+        z-index: 1;
         position: sticky;
         inset: 0 0 auto 0;
-        z-index: 1;
     }
 
     header .wrapper {
@@ -374,7 +374,7 @@
 
         nav {
             width: 50%;
-            position: absolute;
+            position: fixed;
             inset: 3.4rem 0 auto 0;
             padding-block: var(--gap-5);
 
@@ -425,7 +425,7 @@
     }
     /************* Hero Section *************/
 
-    /************* Proof Section *************/
+    /************* Stats Section *************/
     .stat-list {
         display: grid;
         gap: var(--gap-4);
@@ -439,7 +439,7 @@
             padding: var(--padding-4) var(--padding-3);
         }
     }
-    /************* Proof Section *************/
+    /************* Stats Section *************/
 
     /************* Problem Section *************/
     .problem-section .wrapper {
@@ -559,6 +559,12 @@
         ul {
             display: grid;
             gap: var(--gap-1);
+
+            li {
+                display: flex;
+                gap: var(--gap-0);
+                align-items: center;
+            }
         }
     }
     /************* Pricing Section *************/
