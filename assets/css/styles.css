@@ -614,9 +614,12 @@
     /************* Ressources Section *************/
     .ressources-list {
         display: flex;
-        gap: var(--gap-2);
+        gap: var(--gap-0);
         flex-direction: column;
         justify-content: center;
+
+        list-style-position: inside;
+        list-style-type: upper-roman;
     }
     /************* Ressources Section *************/
 
