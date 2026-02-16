@@ -37,8 +37,13 @@
     </header>
 
     <section class="gallery-section">
-        <div class="wrapper">
-            <ul class="gallery-list">
+        <div class="wrapper flow-lg">
+            <div class="gallery-tabs">
+                <button class="tab-btn active" data-tab="video-list">Vidéos</button>
+                <button class="tab-btn" data-tab="img-list">Images</button>
+            </div>
+
+            <ul class="gallery-list show" id="video-list">
                 <li>
                     <video controls preload="none" poster="assets/videos/video2.jpg">
                         <source src="assets/videos/video2.mp4" type="video/mp4">
@@ -60,7 +65,7 @@
                     </video>
                 </li>
                 <li>
-                    <video controls preload="none" poster="assets/videos/video">
+                    <video controls preload="none" poster="assets/videos/video.jpg">
                         <source src="assets/videos/video6.mp4" type="video/mp4">
                     </video>
                 </li>
@@ -69,6 +74,8 @@
                         <source src="assets/videos/video5.mp4" type="video/mp4">
                     </video>
                 </li>
+            </ul>
+            <ul class="gallery-list" id="img-list">
                 <li>
                     <img src="assets/img/gallery.avif" alt="" loading="lazy">
                 </li>
@@ -141,6 +148,6 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/carousel.js" type="module"></script>
+    <script src="assets/js/gallery.js" type="module"></script>
 </body>
 </html>

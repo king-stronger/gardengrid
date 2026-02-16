@@ -281,22 +281,25 @@
     /************* Pricing Section *************/
 
 
-    /************* Video Section *************/
-    .gallery-section {
-        a {
-            color: blue;
-        }
+    /************* Gallery Section *************/
+    .gallery-section :where(img, video) {
+        border-radius: 1rem;
 
-        img, video {
-            border-radius: 1rem;
-
-            @supports(corner-shape: squircle){
-                border-radius: 2rem;
-                corner-shape: squircle;
-            }
+        @supports(corner-shape: squircle){
+            border-radius: 2rem;
+            corner-shape: squircle;
         }
     }
-    /************* Video Section *************/
+
+    .gallery-tabs .tab-btn {
+        border-radius: 2rem;
+
+        &.active {
+            color: var(--clr-white);
+            background: var(--clr-black);
+        }
+    }
+    /************* Gallery Section *************/
 
     /************* Ressources Section *************/
     .ressources-section {
@@ -583,7 +586,7 @@
 
 
     /************* Gallery Section *************/
-    .gallery-list {
+    .gallery-list.show {
         display: grid;
         gap: var(--gap-5);
         grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
@@ -591,6 +594,20 @@
         video {
             aspect-ratio: 16/9;
         }
+    }
+
+    .gallery-tabs {
+        display: flex;
+        gap: var(--gap-1);
+        justify-content: center;
+
+        .tab-btn {
+            padding: var(--padding-1) var(--padding-2);
+        }
+    }
+
+    .gallery-list {
+        display: none;
     }
     /************* Gallery Section *************/
 
