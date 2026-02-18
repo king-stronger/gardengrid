@@ -1,0 +1,334 @@
+section + section {
+    margin-top: var(--gap-6);
+}
+
+.wrapper {
+    padding-block: var(--gap-5);
+}
+
+/************* Header Section *************/
+header {
+    z-index: 1;
+    position: sticky;
+    inset: 0 0 auto 0;
+}
+
+header .wrapper {
+    display: flex;
+    align-items: center;
+    padding: var(--padding-1) 0;
+    justify-content: space-between;
+}
+
+.header-btns {
+    display: flex;
+    gap: var(--gap-2);
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+    width: max(120px, 15%);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    column-gap: var(--gap-1);
+}
+
+.socials {
+    display: flex;
+    gap: var(--gap-2);
+    margin-top: var(--gap-2);
+}
+
+#open-menu, #close-menu {
+    display: none;
+}
+
+@media (width < 768px){
+    #open-menu, #close-menu {
+        display: flex;
+    }
+
+    nav {
+        width: 50%;
+        position: fixed;
+        inset: 3.4rem 0 auto 0;
+        padding-block: var(--gap-5);
+
+        margin-left: auto;
+        align-items: center;
+        row-gap: var(--gap-4);
+        flex-direction: column;
+
+        translate: 150% 0;
+        transition: translate 200ms ease-in;
+    }
+
+    nav.show {
+        translate: 0 0;
+    }
+}
+/************* Header Section *************/
+
+/************* Hero Section *************/
+.hero-section .wrapper {
+    isolation: isolate;
+    place-items: center;
+    place-content: center;
+    padding-block: var(--gap-2) var(--gap-4);
+
+    .hero-section-btn {
+        display: flex;
+        gap: var(--gap-1);
+    }
+
+    .swiper {
+        width: 100%;
+        
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media(width < 768px){
+    .swiper img {
+        aspect-ratio: 3 / 5;
+    }
+}
+
+@media(width > 768px){
+    .swiper img {
+        aspect-ratio: 16 / 9;
+    }
+}
+
+.hero-alt-section .wrapper {
+    display: grid;
+    gap: var(--gap-4);
+    align-items: center;
+    padding-block: var(--gap-4) var(--gap-4);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+}
+/************* Hero Section *************/
+
+/************* Stats Section *************/
+.stat-list {
+    display: grid;
+    gap: var(--gap-4);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+
+    li {
+        display: grid;
+        gap: var(--gap-1);
+        place-items: center;
+        place-content: center;
+        padding: var(--padding-4) var(--padding-3);
+    }
+}
+/************* Stats Section *************/
+
+/************* Problem Section *************/
+.problem-section .wrapper {
+    display: grid;
+    gap: var(--gap-4);
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+}
+
+.problem-content-list {
+    display: grid;
+    gap: var(--gap-3);
+
+
+    li {
+        display: grid;
+        gap: var(--gap-0);
+    }
+}
+
+@media (width < 768px){
+    .problem-section .img-wrapper {
+        order: 1;
+    }
+
+    .problem-content {
+        order: 2;
+    }
+}
+/************* Problem Section *************/
+
+/************* How Section *************/
+.how-section .wrapper {
+    display: grid;
+    gap: var(--gap-4);
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+}
+
+.how-content-list {
+    display: grid;
+    gap: var(--gap-3);
+
+
+    li {
+        display: grid;
+        gap: var(--gap-0);
+    }
+}
+/************* How Section *************/
+
+/************* Feature Section *************/
+.feature-list {
+    display: grid;
+    gap: var(--gap-4);
+    grid-template-rows: auto 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    
+    li {
+        display: grid;
+        grid-row: span 2;
+        row-gap: var(--gap-0);
+        grid-template-rows: subgrid;
+        padding: var(--padding-4) var(--padding-3);
+    }
+}
+/************* Feature Section *************/
+
+/************* CTA Section *************/
+.cta-section .wrapper {
+    display: grid;
+    gap: var(--gap-2);
+    place-items: center;
+    place-content: center;
+}
+/************* CTA Section *************/
+
+
+/************* About Pages Section *************/
+:is(.about-section, .vision-section) .wrapper {
+    display: grid;
+    gap: var(--gap-4);
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+}
+/************* About Pages Section *************/
+
+
+/************* Solution Section *************/
+.solution-section .wrapper {
+    display: grid;
+    gap: var(--gap-4);
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+}
+/************* Solution Section *************/
+
+/************* Pricing Section *************/
+.prices {
+    display: grid;
+    gap: var(--gap-4);
+    grid-template-rows: auto 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    
+
+    .price {
+        display: flex;
+        gap: var(--gap-4);
+        flex-direction: column;
+        justify-content: space-between;
+        padding: var(--padding-4) var(--padding-3);
+
+        .price-btn {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    ul {
+        display: grid;
+        gap: var(--gap-1);
+
+        li {
+            display: flex;
+            gap: var(--gap-0);
+            align-items: center;
+        }
+    }
+}
+/************* Pricing Section *************/
+
+
+/************* Gallery Section *************/
+.gallery-list.show {
+    display: grid;
+    gap: var(--gap-5);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+
+    video {
+        aspect-ratio: 16/9;
+    }
+}
+
+.gallery-tabs {
+    display: flex;
+    gap: var(--gap-1);
+    justify-content: center;
+
+    .tab-btn {
+        padding: var(--padding-1) var(--padding-2);
+    }
+}
+
+.gallery-list {
+    display: none;
+}
+/************* Gallery Section *************/
+
+/************* Ressources Section *************/
+.ressources-list {
+    display: flex;
+    gap: var(--gap-0);
+    flex-direction: column;
+    justify-content: center;
+
+    list-style-position: inside;
+    list-style-type: upper-roman;
+}
+/************* Ressources Section *************/
+
+/************* Footer Section *************/
+footer {
+    margin-top: var(--gap-9);
+}
+
+footer .wrapper {
+    display: grid;
+    gap: var(--gap-4);
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+
+    .footer-paragraph {
+        display: grid;
+        gap: var(--gap-0);
+    }
+
+    .social-links {
+        display: flex;
+        gap: var(--gap-0);
+        align-items: center;
+    }
+    
+    .form-footer {
+        display: flex;
+        gap: var(--gap-0);
+
+        input {
+            max-width: 75%;
+        }
+    }
+}
+/************* Footer Section *************/
