@@ -163,7 +163,7 @@
         color: var(--clr-primary);
     }
 
-    @media (width < 600px){
+    @media (width < 768px){
         nav {
             border-radius: 1rem;
             color: var(--text-alt);
@@ -191,6 +191,10 @@
         color: var(--text-alt);
         background-color: var(--bg-body-alt);
 
+        h2 {
+            font-size: var(--fs-500);
+        }
+
         p {
             color: var(--text-muted-alt);
         }
@@ -198,8 +202,7 @@
     }
     .swiper {
         .swiper-button-prev,
-        .swiper-button-next,
-        .swiper-pagination {
+        .swiper-button-next {
             * {
                 color: var(--clr-black);
             }
@@ -213,6 +216,12 @@
                 border-radius: 2rem;
                 corner-shape: squircle;
             }
+        }
+    }
+
+    @media (width < 768px){
+        .hero-section h2 {
+            font-size: var(--fs-400);
         }
     }
     /************* Hero Section *************/
@@ -382,7 +391,7 @@
         display: none;
     }
 
-    @media (width < 600px){
+    @media (width < 768px){
         #open-menu, #close-menu {
             display: flex;
         }
@@ -413,7 +422,7 @@
         isolation: isolate;
         place-items: center;
         place-content: center;
-        padding-block: var(--gap-4) var(--gap-4);
+        padding-block: var(--gap-2) var(--gap-4);
     
         .hero-section-btn {
             display: flex;
@@ -486,7 +495,7 @@
         }
     }
 
-    @media (width < 600px){
+    @media (width < 768px){
         .problem-section .img-wrapper {
             order: 1;
         }
