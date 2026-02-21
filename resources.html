@@ -29,8 +29,8 @@
             </nav>
             <div class="header-btns">
                 <a href="#" class="btn btn-primary">Platform</a>
-                <button id="open-menu">
-                    <i class="ri-menu-line" id="menu-icon"></i>
+                <button id="open-menu" aria-label="Toggle navigation" aria-controls="menu" aria-expanded="false">
+                    <i class="ri-menu-line" id="menu-icon" aria-hidden="true"></i>
                 </button>
             </div>
         </div>
@@ -86,15 +86,15 @@
                     <p class="text-sm">Get smart gardening tips and updates straight to your inbox</p>
                     <div class="form-footer">
                         <input type="email" name="email" placeholder="your@email.com">
-                        <button type="submit" class="btn btn-primary">
-                            <i class="ri-send-plane-2-line"></i>
+                        <button type="submit" class="btn btn-primary" aria-label="Subscribe">
+                            <i class="ri-send-plane-2-line" aria-hidden="true"></i>
                         </button>
                     </div>
                 </form>
-                <ul class="social-links text-md">
-                    <li><a href="" class="social-link ri-linkedin-box-fill"></a></li>
-                    <li><a href="" class="social-link ri-whatsapp-fill"></a></li>
-                    <li><a href="" class="social-link ri-mail-fill"></a></li>
+                <ul class="social-links">
+                    <li class="text"><a href="" class="social-link ri-linkedin-box-fill" aria-label="LinkedIn"></a></li>
+                    <li class="text"><a href="" class="social-link ri-whatsapp-fill" aria-label="WhatsApp"></a></li>
+                    <li class="text"><a href="" class="social-link ri-mail-fill" aria-label="Email"></a></li>
                 </ul>
             </div>
         </div>

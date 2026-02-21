@@ -29,8 +29,8 @@
             </nav>
             <div class="header-btns">
                 <a href="#" class="btn btn-primary">Platform</a>
-                <button id="open-menu">
-                    <i class="ri-menu-line" id="menu-icon"></i>
+                <button id="open-menu" aria-label="Toggle navigation" aria-controls="menu" aria-expanded="false">
+                    <i class="ri-menu-line" id="menu-icon" aria-hidden="true"></i>
                 </button>
             </div>
         </div>
@@ -75,27 +75,27 @@
                     </video>
                 </li>
             </ul>
-            <ul class="gallery-list" id="img-list">
+                <ul class="gallery-list" id="img-list">
                 <li>
-                    <img src="assets/img/gallery.avif" alt="" loading="lazy">
+                    <img src="assets/img/gallery.avif" alt="Community garden overview" loading="lazy">
                 </li>
                 <li>
-                    <img src="assets/img/gallery2.avif" alt="" loading="lazy">
+                    <img src="assets/img/gallery2.avif" alt="Raised garden beds with vegetables" loading="lazy">
                 </li>
                 <li>
-                    <img src="assets/img/gallery3.avif" alt="" loading="lazy">
+                    <img src="assets/img/gallery3.avif" alt="Volunteers planting in the garden" loading="lazy">
                 </li>
                 <li>
-                    <img src="assets/img/gallery4.avif" alt="" loading="lazy">
+                    <img src="assets/img/gallery4.avif" alt="Freshly harvested produce" loading="lazy">
                 </li>
                 <li>
-                    <img src="assets/img/gallery5.avif" alt="" loading="lazy">
+                    <img src="assets/img/gallery5.avif" alt="Garden pathway and seating area" loading="lazy">
                 </li>
                 <li>
-                    <img src="assets/img/gallery6.avif" alt="" loading="lazy">
+                    <img src="assets/img/gallery6.avif" alt="Children learning in a garden workshop" loading="lazy">
                 </li>
                 <li>
-                    <img src="assets/img/gallery7.avif" alt="" loading="lazy">
+                    <img src="assets/img/gallery7.avif" alt="Evening garden with lights" loading="lazy">
                 </li>
             </ul>
         </div>
@@ -132,16 +132,16 @@
                 <form action="" class="flow-xs">
                     <p class="text-sm">Get smart gardening tips and updates straight to your inbox</p>
                     <div class="form-footer">
-                        <input type="email" name="email" placeholder="your@email.com">
-                        <button type="submit" class="btn btn-primary">
-                            <i class="ri-send-plane-2-line"></i>
-                        </button>
-                    </div>
+                            <input type="email" name="email" placeholder="your@email.com">
+                            <button type="submit" class="btn btn-primary" aria-label="Subscribe">
+                                <i class="ri-send-plane-2-line" aria-hidden="true"></i>
+                            </button>
+                        </div>
                 </form>
-                <ul class="social-links text-md">
-                    <li><a href="" class="social-link ri-linkedin-box-fill"></a></li>
-                    <li><a href="" class="social-link ri-whatsapp-fill"></a></li>
-                    <li><a href="" class="social-link ri-mail-fill"></a></li>
+                <ul class="social-links">
+                    <li class="text"><a href="" class="social-link ri-linkedin-box-fill" aria-label="LinkedIn"></a></li>
+                    <li class="text"><a href="" class="social-link ri-whatsapp-fill" aria-label="WhatsApp"></a></li>
+                    <li class="text"><a href="" class="social-link ri-mail-fill" aria-label="Email"></a></li>
                 </ul>
             </div>
         </div>
